@@ -1,0 +1,215 @@
+
+/* this is my stylesheet I created to format my first 
+website */
+
+/* first I styles the main content, the body */
+
+body {
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* --- ELEMENTS --- */
+
+/* by styling these headers (h1 to h4), my webpage
+appears more aesthetically pleasing and organized */
+
+h1 {
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* I opted to underline the header for emphasis */
+
+h3 {
+    font-style: italic;
+    background-color: black;
+    font-size: 22px;
+    width: max-content;
+    padding: 15px;
+    color: whitesmoke;
+}
+
+/* I liked how the black border with white text 
+and proper padding made the h3 header look like 
+a vintage sticker */
+
+h4 {
+    font-size: 28px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* I used a border with a rounded radius
+for my navbar so it is easy to identify, as well as
+for a different shape/style from my other text
+I also tried to ensure the colors were contrasting
+enough while also maintaining continuity,
+especially for those with visual impairments */
+
+.navbar {
+    background-color: rgba(202, 159, 182, 0.904);
+    padding: .50em;
+    border: solid;
+    border-radius: 5em;
+}
+
+.navbar ol {
+  display: flex;  
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+}
+
+/* I made sure to use flex so my content
+maintains its display block 
+without using flex, the content may become
+squished together or even overlap */
+
+.navbar a {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-style: italic;
+    margin-right: 2em;
+    font-size: 25px;
+}
+
+/* I used the hover element to show when the
+cursor is highlighting each option in the
+navigation bar */
+
+.navbar a:hover {
+    color: rgba(164, 103, 41, 0.692);
+    text-decoration: dashed;
+    font-weight: bolder;
+}
+
+/* I added the active element for when the
+cursor clicks, or selects, each option */
+
+.navbar a:active {
+    background-color: whitesmoke;
+    border-radius: 100px;
+}
+
+/* --- IMAGE LIST INDEX ---*/
+
+#favoritethings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+/* I used flex here to add continuity to my webpage
+with the justify content element, everything appears
+more neat and organized along the axis */
+
+#favoritethings li {
+    text-align: center;
+    list-style-type: none;
+}
+
+/* I centered my content with text align so that
+each item has more prominence */
+
+/* --- TABLE --- */
+
+table {
+    background-color: rgba(164, 103, 41, 0.692);
+    border: 3px solid black;
+    border-radius: .5em;
+}
+
+/* here is my table of contacts
+I used different text decorations here so that
+each item has its own distinct look
+also, the varying borders help maintain the 
+organization of the table */
+
+table caption {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    border: 3px solid black;
+    border-radius: .5em;
+    letter-spacing: 2px;
+    background-color: rgba(152, 210, 118, 0.702);
+}
+
+thead {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: underline;
+    letter-spacing: 15px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+/* for my thead, table header, I wanted to ensure
+there is enough emphasis so users know 
+what the content is
+I liked using letter spacing and justify content 
+to achieve this */
+
+th, tr {
+    text-indent: 20px;
+    letter-spacing: .5px;
+}
+
+/* I modified the table head and table row here*/
+
+/* --- FORM PAGE --- */
+
+/* finally, here is my form page
+where users can enter their contact info */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    border: solid;
+    color: black;
+    background-color: rgba(164, 103, 41, 0.692);
+    padding: 10px;
+    border-radius: .5em;
+}
+
+/* I decided to maintain continuity of style
+by using the same colors as the table */
+
+form label {
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+}
+
+form input {
+    margin-bottom: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding: 5px;
+    background-color: rgba(152, 210, 118, 0.702);
+}
+
+/* for the 'submit' button I wanted to make sure it
+stands out from the input info
+I used a border with a solid radius
+and added underlined text decoration */
+
+form button {
+    padding: 5px;
+    letter-spacing: 2px;
+    border: solid;
+    border-radius: 1em;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+}
